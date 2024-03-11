@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Ramadan Moon</title>
+</head>
+<body>
+    <header>¿Has visto la luna de ramadan?</header>
+    <h2>Esta web pretende que cada año, la gente de todo el mundo pueda compartir sus avistamientos de la luna de ramadan.</h2>
+    <main>
+        <section>
+            <details class="front" id="cuestionario-min">
+                <summary>¿Has visto la luna de ramadan?</summary>
+       <form class="formulario">
+            <label for="lugar"></label>
+            <input placeholder="Donde lo has visto?"  type="text" id="lugar" name="lugar" required><br>
+
+            <label for="nombre"></label>
+            <input placeholder="Como te conocen?" type="text" id="nombre" name="nombre"><br>
+            
+            <label for="comunidad"></label>
+            <input placeholder="A que comunidad perteneces?" type="text" id="comunidad" name="comunidad" required><br>
+
+            <label for="pais"></label>
+            <input placeholder="Pais donde te encuentras" type="text" id="pais" name="pais" required><br>                    
+                        
+            <label for="hora"></label>
+            <input type="time" id="hora" name="hora" required>Hora de avistamiento<br>
+            
+            <label for="grupo"></label>
+            <input placeholder="Con cuanta gente estas?" type="number" id="grupo" name="grupo" min="1"><br>
+            <label for="foto"></label>
+            <input type="file" id="foto" name="foto"><br>
+            
+            <input type="checkbox" id="juramento" name="juramento" required>
+            <label for="juramento">Juramento de sinceridad</label><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </details>
+        </section>
+        <section class="front">
+            <details>
+            <summary>Lugares donde se ha visto la luna</summary>
+            <span id="avistados"></span>
+
+
+
+            </details>
+
+        </section>
+
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
